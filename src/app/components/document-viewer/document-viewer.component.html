@@ -1,0 +1,4 @@
+<div class="viewer-container" #viewContainer>
+  <app-document-toolbar  [fabricCanvases]="fabricCanvases" (zoomChange)="onZoomChange($event)"/>
+  <div class="pages-container" #canvasContainer></div>
+</div>

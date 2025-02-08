@@ -1,0 +1,35 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+.viewer-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: silver;
+}
+
+.pages-container {
+  padding: 20px 0;
+
+  .page-container {
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
